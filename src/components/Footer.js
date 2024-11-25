@@ -60,14 +60,15 @@ const Footer = () => {
             <option value="Spanish">Spanish</option>
             <option value="French">French</option>
           </select>
-            <h3 style={{color:'black'}}>Cities</h3>
+            <h3 style={{color:'black', fontSize:'20px'}}>Cities</h3>
             <select className="dropdownStyle">
             <option value="New York">New York</option>
             <option value="London">London</option>
             <option value="Tokyo">Tokyo</option>
             <option value="Paris">Paris</option>
+            <option value="Paris">Nigeria</option>
           </select>
-            <h3 style={{color:'black'}}>FOLLOW US</h3>
+            <h3 style={{color:'black', fontSize:'20px'}}>FOLLOW US</h3>
             <li>
               <FontAwesomeIcon icon={faFacebook} size="2x"  style={{color:'#74C0FC', marginRight:'5px'}}/> 
               <FontAwesomeIcon icon={faLinkedin}  size="2x" color='#74C0FC'/>

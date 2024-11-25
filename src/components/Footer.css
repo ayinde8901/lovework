@@ -1,155 +1,141 @@
 /* General footer styles */
 .footerStyle {
-    background-color: #C9EDDC;
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Evenly distribute space */
-  }
-  
-  /* Container inside the footer */
-  .containerStyle {
-    display: flex;
-    justify-content: space-between; /* Spread out the sections */
-    align-items: flex-start;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 5 auto;
-    padding: 0 30px;
-    flex-grow: 1;
-  }
-  
-  /* Each section in the footer */
-  .sectionStyle {
-    margin: 30px;
-    flex: 1 1 200px; /* Grow and shrink each section, with a min width of 200px */
-    text-align: left;
-    font-size: 15px;
-    margin-left: 40px;
-  }
-  
-  /* Footer list styles */
-  .listStyle {
-    list-style: none;
-    padding: 0;
-    color: rgb(87, 86, 86);
-    margin: 0;
-  }
-  
-  .sectionStyle ul li {
-    margin-bottom: 3px; 
-    font-size: 16px;
-  }
-  
-  .footerStyle p {
-    margin-top: 10px;
-    font-size: 20px;
-  }
-  
-  /* Heading styles */
-  h3 {
-    font-size: 20px; /* Adjust heading font size */
-  }
-  
-  /* Dropdown style */
-  .dropdownStyle {
-    width: 120px;
-    padding: 8px;
-    font-size: 15px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: transparent;
-  }
-  
-  /* Media query for tablets and small screens */
-  @media (max-width: 1024px) {
-    .footerStyle {
-      height: auto; /* Allow height to adjust on smaller screens */
-      padding-bottom: 40px;
-    }
-    
-    .containerStyle {
-      flex-direction: column; /* Stack sections vertically */
-      align-items: center;
-    }
-  
-    .sectionStyle {
-      text-align: center; /* Center text on smaller screens */
-      margin: 20px 0;
-    }
-  
-    h3 {
-      font-size: 18px; /* Smaller heading font */
-    }
-  
-    .sectionStyle ul li {
-      font-size: 14px; /* Smaller list item font */
-    }
-  
-    .dropdownStyle {
-      width: 100px; /* Adjust dropdown width */
-      font-size: 13px;
-    }
-  
-    .footerStyle p {
-      font-size: 18px;
-    }
-  }
-  
-  /* Media query for mobile screens */
-  @media (max-width: 768px) {
-    .containerStyle {
-      padding: 0 20px; /* Less padding on mobile */
-    }
-  
-    .sectionStyle ul li {
-      font-size: 13px;
-      margin-bottom: 2px;
-    }
-  
-    h3 {
-      font-size: 16px;
-    }
-  
-    .dropdownStyle {
-      width: 90px;
-      font-size: 12px;
-    }
-  
-    .footerStyle p {
-      font-size: 16px;
-    }
-  }
-  
-  /* Media query for extra small screens */
-  @media (max-width: 480px) {
-    .footerStyle {
-      padding-bottom: 60px; /* Extra padding for better spacing */
-    }
-  
-    .sectionStyle ul li {
-      font-size: 12px; /* Reduce font size for smaller screens */
-      margin-bottom: 1px;
-    }
-  
-    h3 {
-      font-size: 14px;
-    }
-  
-    .dropdownStyle {
-      width: 80px;
-      font-size: 11px;
-    }
-  
-    .footerStyle p {
-      font-size: 14px;
-    }
-  }
-  /* #shift{
-    margin-left: 90px;
+  background-color: #C9EDDC;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+  box-sizing: border-box; /* Ensures padding doesn't break the layout */
+}
 
-  } */
+/* Container inside the footer */
+.containerStyle {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 55px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%; /* Ensure container takes full width */
+  padding: 0 20px;
+  gap: 20px; /* Adds space between sections */
+  box-sizing: border-box;
+}
+
+/* Each section in the footer */
+.sectionStyle {
+  flex: 1 1 250px; /* Flexible basis with a minimum width */
+  text-align: left;
+  font-size: 15px;
+  margin: 10px;
+}
+
+/* Footer list styles */
+.listStyle {
+  list-style: none;
+  padding: 0;
+  color: rgb(87, 86, 86);
+  margin: 0;
+}
+
+.sectionStyle ul li {
+  margin-bottom: 8px; 
+  font-size: 16px;
+}
+
+.footerStyle p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Heading styles */
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Dropdown style */
+.dropdownStyle {
+  width: 100%;
+  max-width: 150px; /* Prevent dropdowns from stretching */
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+ 
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for tablets and small screens */
+@media (max-width: 1024px) {
+  .footerStyle {
+      font-size: 18px;
+  }
+
+  .containerStyle {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .sectionStyle {
+      text-align: center;
+      flex: 1 1 100%; /* Ensure sections take full width on smaller screens */
+  }
+
+  h3 {
+      font-size: 18px;
+  }
+
+  .sectionStyle ul li {
+      font-size: 14px;
+  }
+
+  .dropdownStyle {
+      font-size: 13px;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .sectionStyle ul li {
+      font-size: 13px;
+      margin-bottom: 5px;
+  }
+
+  h3 {
+      font-size: 16px;
+  }
+
+  .dropdownStyle {
+      font-size: 12px;
+      width: 100px;
+  }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 480px) {
+  .footerStyle {
+      padding: 20px;
+  }
+
+  .sectionStyle ul li {
+      font-size: 12px;
+  }
+
+  h3 {
+      font-size: 14px;
+  }
+
+  .dropdownStyle {
+      font-size: 11px;
+      width: 80px;
+  }
+}
