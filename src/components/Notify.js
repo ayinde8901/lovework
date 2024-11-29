@@ -31,8 +31,9 @@ const Notify = () => {
   };
 
   return (
+   
     <div className='notify'>
-      <h4 style={{fontFamily:'sans-serif'}}>Notification Settings</h4>
+      <h4 style={{fontFamily:'sans-serif', textAlign:'center'}}>Notification Settings</h4>
       <p style={{color:'black'}}>Notify me when... 
         <span style={{color:'green', float:'right'}}>Allow Notification ?</span>
       </p>

@@ -7,7 +7,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 const Profile = () => {
   return (
     <div className='space'>
-      <h3 style={{color:'#0db8b8'}}>My profile</h3>
+      <h3 style={{color:'#0db8b8', textAlign:'center'}}>My profile</h3>
       <div className='ten'>
        <img src={white} alt='profile'  className='img'/>
        <p className='popo'>Taofeeq Jubril <br/> <span className='new'>Lagos Nigeria</span></p>

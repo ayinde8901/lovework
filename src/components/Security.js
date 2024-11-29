@@ -1,5 +1,5 @@
 import React from 'react';
-import './Security.css'; // Import your CSS file
+import './Security.css';
 
 const Security = () => {
   return (
@@ -7,8 +7,13 @@ const Security = () => {
       <form className="formStyle">
         <label htmlFor="password" className="labelStyle">Security</label>
         <div className="input-container">
-          <input type="password" id="password" className="inputStyle" placeholder="Update password" />
-          <i className="fa fa-edit iconStyle"></i> {/* Font Awesome icon */}
+          <input
+            type="password"
+            id="password"
+            className="inputStyle"
+            placeholder="Update password"
+          /> 
+         <i className="fas fa-edit iconStyle"></i>
         </div>
       </form>
     </div>
